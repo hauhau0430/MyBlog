@@ -11,7 +11,7 @@ orbs:
         - checkout
         - run: 
             name: Run test
-            command: ruby application_system_test_case.rb
+            command: ruby test/application_system_test_case.rb
   
   
   workflows:
