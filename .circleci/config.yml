@@ -1,21 +1,19 @@
-version: 2.1
-orbs:
-  ruby: circleci/ruby@0.1.2 
+version: 2
 
-  jobs:
-    test:
-      docker:
-        - image: circleci/ruby:2.6.1
-      working_directory: ~/repo
-      steps:
-        - checkout
-        - run: 
-            name: Run test
-            command: ruby test/application_system_test_case.rb
-  
-  
+jobs:
+  test:
+    docker:
+      - image: circleci/ruby:2.5.3
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: 
+          name: Run test
+          command: ruby calculation_spec.rb
+
+
+workflows:
+  version: 2
   workflows:
-    version: 2
-    workflows:
-      jobs:
-        - test
+    jobs:
+      - test
