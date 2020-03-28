@@ -1,5 +1,5 @@
 # 計算クラス
-# ./calculation.rb
+# ./test/calculation.rb
 module Calculation
     # 足し算メソッド
     def self.sum(a, b)
