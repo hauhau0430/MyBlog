@@ -9,10 +9,13 @@ orbs:
       working_directory: ~/repo
       steps:
         - checkout
-
+        - run: 
+            name: Run test
+            command: ruby application_system_test_case.rb
   
   
   workflows:
     version: 2
     workflows:
       jobs:
+        - test
