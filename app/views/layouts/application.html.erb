@@ -1,15 +1,45 @@
 <!DOCTYPE html>
+
+<!--
+サイト閲覧ありがとうございます
+当サイトは Ruby on Rails で作成しております
+
+-->
+
+
 <html>
   <head>
-    <title>AppName</title>
+    <title><%= page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div id="container">
+
+      <header>
+        <%= render "shared/header" %>
+      </header>
+
+      <aside id="leftsidebar">
+        <%= render "shared/leftsidebar" %>
+      </aside>
+
+      <main>
+        <%= yield %>
+      </main>
+
+      <aside id="rightsidebar">
+        <%= render "shared/rightsidebar" %>
+      </aside>
+
+      <footer>
+        <%= render "shared/footer" %>
+      </footer>
+
+    </div>
   </body>
 </html>

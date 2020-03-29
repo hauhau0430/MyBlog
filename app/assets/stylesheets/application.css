@@ -13,3 +13,111 @@
  *= require_tree .
  *= require_self
  */
+
+
+ /* Application */
+
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Meiryo, sans-serif;
+}
+
+
+
+/* header */
+header h1 {
+    text-align: left;
+    margin: 30px 0 30px 350px;
+}
+
+
+/* メニューバー */
+nav.menubar {
+    background-color: #444;
+    padding: 5px 0 5px 350px;
+}
+
+nav.menubar ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav.menubar ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+/* メニューバーのリンク */
+nav.menubar ul li a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+/* メニューバーのリンク（未訪問） */
+nav.menubar ul li a:link {
+    color: #ccc; 
+}
+
+/* メニューバーのリンク（訪問済） */
+nav.menubar ul li a:visited {
+    color: #ccc;
+}
+
+nav.menubar ul li a:hover { 
+    border-bottom: dotted 1px #fff;	 
+}
+
+
+
+
+/* main */
+main {
+    float: left;
+    text-align: left;
+    width: 60%;
+    height: 100%;
+    margin: 10px 10px 10px 350px;
+}
+
+
+
+
+/* rightsidebar */
+aside#rightsidebar {
+    background-color: red;
+    float: left;
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    padding: 0 30px;
+    right: 0;
+}
+
+
+
+
+/* leftsidebar */
+aside#leftsidebar {
+    background-color: red;
+    float: left;
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    padding: 0 30px;
+    left: 0;
+}
+
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    position: absolute;/*←絶対位置*/
+    bottom: 10px; /*下に固定*/
+}
