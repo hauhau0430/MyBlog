@@ -1,0 +1,38 @@
+header {
+    margin: 0;
+    padding: 0;
+    background-color: #FF8C00;
+    border-radius: 20px 20px 0 0;
+}
+
+header h1 {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-bottom: solid 2px #f00;
+    font-size: 30px;
+    text-shadow: 5px 5px 2px #555;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: table;
+    list-style: none;
+    margin: auto;
+}
+
+nav ul li {
+    color: #444;
+    display: table-cell;
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 20px;
+}
